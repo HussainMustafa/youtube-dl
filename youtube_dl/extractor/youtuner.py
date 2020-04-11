@@ -16,7 +16,7 @@ class YoutunerIE(InfoExtractor):
             webpage, "title"
         )
         download_url = self._search_regex(
-            r'(https://[^/]+/audios/[^\.]+\.[^"]+)"/>',
+            r'(https:\/\/feedproxy.google.com\/~r\/animecrazies\/~5\/\S+\/.+\.mp3)',
             webpage, "download_url"
         )
 
@@ -25,7 +25,5 @@ class YoutunerIE(InfoExtractor):
             'url': download_url,
             'title': title,
         }
-
-
 
         return extracted
