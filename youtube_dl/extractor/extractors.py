@@ -34,7 +34,6 @@ from .aenetworks import (
 )
 from .afreecatv import AfreecaTVIE
 from .airmozilla import AirMozillaIE
-from .akvideo import AKVideoIE
 from .aljazeera import AlJazeeraIE
 from .alphaporno import AlphaPornoIE
 from .amcnetworks import AMCNetworksIE
@@ -1480,6 +1479,7 @@ from .youtube import (
     YoutubeUserIE,
     YoutubeWatchLaterIE,
 )
+from .youtuner import YoutunerIE
 from .zapiks import ZapiksIE
 from .zaq1 import Zaq1IE
 from .zattoo import (
